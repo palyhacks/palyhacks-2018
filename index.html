@@ -49,7 +49,6 @@
 #sponsor img {
     width:100%;
     height:50%;
-    /*padding-top:10%;*/
 }
 </style>
 
@@ -57,27 +56,17 @@
 <header>
     <div class="cutBackground header-content">
         <div class="header-content-inner" style = "padding-top: 10% !important">
-            <div style="width:250px;margin:auto;"><img src="img/emblem.svg"></img></div>
-                <div style="font-family: 'Montserrat', sans-serif; font-size: 55px; margin-top:10px; margin-bottom:0px;">
-                    <font color = "#FFFFFF"><center><b>PalyHacks 2018</b></center></font>
-                </div>
+                <div class = "emblem"><img src="img/emblem.svg"></img></div>
+                
+                <div class="header-huge">PalyHacks 2018</div>
+                <div class = "header-large" style="">April 14 - 15, 2018</div>
+                <div class = "header-gray"><p>Partnered with WeChat&reg;</p></div>
+                <div class = "header-medium">Palo Alto High School</div>
+                <div class = "header-medium" style = "margin-bottom: 20px">50 Embarcadero Road</div>
+            
+                <a href="https://palyhacks-slack.herokuapp.com/" class="btn btn-default btn-lg"><i class="fa fa-eye fa-fw"></i> <span class="network-name">Slack</span></a>
+                <a href="https://palyhacks.typeform.com/to/PeyYP0/" class="btn btn-default btn-lg"><i class="fa fa-eye fa-fw"></i> <span class="network-name">Register</span></a>
 
-
-                <div style=" font-size: 33px; margin-top:0px;margin-bottom: 0px;text-transform: uppercase;">
-                    <font color = "#FFFFFF"><center><b>April 14 - 15, 2018</b></center></font>
-                </div>
-
-                <div style=" font-size: 29px; margin-top:0px;text-transform: uppercase;">
-                    <font color = "#FFFFFF"><center><p style = "margin-bottom: 20px; font-size: 21px">Partnered with WeChat&reg;</p></center></font>
-                </div>
-
-                <div style=" font-size: 22px; margin-top:0px;">
-                    <font color = "#FFFFFF"><center>Palo Alto High School</center></font>
-                </div>
-                <div style=" font-size: 22px; margin-top:0px; margin-bottom:20px;">
-                    <font color = "#FFFFFF"><center>50 Embarcadero Road</center></font>
-                </div>
-                <a class="ghost-button-long" href="https://palyhacks-slack.herokuapp.com/" style="">Join Slack</a>
             </div>
         </div>
     </div>
@@ -98,44 +87,35 @@
     </div>
 </nav>
 
-
-
-
-    <!--PopUp-->
-    <div class="popup" data-popup="popup-1" style = "z-index: 100002389427347832789;">
-        <div class="popup-inner">
-
-        <h3 style="color:black; text-align: center; padding-bottom: 0px;">Meet Us</h3> 
-            <div class="no-gutter">
-                <div class="col-lg-4 col-sm-4 col-xs-6">
-                        <img src="img/team/me.jpg" class="img-responsive" alt="">
-                    <hr>
-                    <h4 style = "text-align: center;">Emily Yu</h4>
-                    <p style = "text-align: center">Head Organizer</br>Sponsorship Director</p>
-                </div>
-                <div class="col-lg-4 col-sm-4 col-xs-6">
-                        <img src="img/team/kov.jpg" class="img-responsive" alt="">
-                    <hr>
-                    <h4 style = "text-align: center;">Kevin Fang</h4>
-                    <p style = "text-align: center">Organizer</br>Sponsorship</p>
-                </div>
-                <div class="col-lg-4 col-sm-4 col-xs-6">
-                    <img src="img/team/kov.jpg" class="img-responsive" alt="">
-                    <hr>
-                    <h4 style = "text-align: center;">Neil Yeung</h4>
-                    <p style = "text-align: center;">Organizer</br>TBD</p>
-                </div>
-         <div>
-         </div>
-         <hr>
-        </div>
-            <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
-        </div>
-
+<!--Team-->
+<div class="popup" data-popup="popup-1">
+    <div class="popup-inner">
+        <h3 class = "popup-header">Meet Us</h3> 
+        <div class="no-gutter">
+            <div class="col-lg-4 col-sm-4 col-xs-6 team-member">
+                <img src="img/team/me.jpg" class="img-responsive" alt="">
+                <h4>Emily Yu</h4>
+                <p>Head Organizer</br>Sponsorship Director</p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-xs-6 team-member">
+                <img src="img/team/kov.jpg" class="img-responsive" alt="">
+                <h4>Kevin Fang</h4>
+                <p>Organizer</br>Sponsorship</p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-xs-6 team-member">
+                <img src="img/team/kov.jpg" class="img-responsive" alt="">
+                <h4>Neil Yeung</h4>
+                <p>Organizer</br>TBD</p>
+            </div>
+        <div>
     </div>
-    <!--End Pop Up-->
+    <hr>
+    </div>
+        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+    </div>
+</div>
 
-<!-- SChedule-->
+<!-- Schedule-->
 <section class="schedule" id="about">
     <div class="container">
         <div class="row" style = "margin-left:10%; margin-right:10%">
@@ -155,7 +135,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading" style = "color: white">FAQ</h2>
+                <h2 class="section-heading white">FAQ</h2>
                 <hr>
            </div>
         </div>
@@ -166,7 +146,7 @@
         <div class="row">
         	<div class="col-lg-6">
         		<p class="text-muted">Q: What is a hackathon?</p>
-        		<p class="text-muted">A: A hackathon is a place where coders, designers, and anyone with an idea can come and make their ideas a reality. More information on hackathons can be found <a style="font-weight:bold;text-decoration:underline;color:white !important"href="https://mlh.io/parent-hackathon-guide" target="_blank">here</a>.</p>
+        		<p class="text-muted">A: A hackathon is a place where coders, designers, and anyone with an idea can come and make their ideas a reality. More information on hackathons can be found <a class = "inline-link" href="https://mlh.io/parent-hackathon-guide" target="_blank">here</a>.</p>
                 <p class="text-muted">Q: Can I go alone?</p>
                 <p class="text-muted">A: For sure. If you come alone, we can help you form teams, and it is a great opportunity to meet new people as well. </p>
                 <p class="text-muted">Q: Who can come?</p>
@@ -184,22 +164,22 @@
                 <p class="text-muted">Q: What should I make?</p>
                 <p class="text-muted">A: Make anything you are interested in. We will have a panel of judges to evaluate your projects at the end.</p>
                 
-<!--                 <p class="text-muted">Q: What if I'm interested in mentoring?</p>
-                <p class="text-muted">A: That's great! Fill out the form <a style = "color:#FFFFFF" href ="https://palyhacks.typeform.com/to/GJ5dXC"><strong>here</strong></a> and we will get back to you shortly.</p> -->
+                <p class="text-muted">Q: What if I'm interested in mentoring?</p>
+                <p class="text-muted">A: That's great! Fill out the form <a class = "inline-link" href ="https://palyhacks.typeform.com/to/U00Sy1">here</a> and we will get back to you shortly.</p>
 
-          
                 <p class="text-muted">Q: What if my question isn't covered on the FAQ?</p>
-                <p class="text-muted">A: No worries! Feel free to contact us at <a href="mailto:info@palyhacks.io" style="color:white !important; font-weight:bold;">info@palyhacks.io</a></p>
+                <p class="text-muted">A: No worries! Feel free to contact us at <a href="mailto:info@palyhacks.io" class = "inline-link">info@palyhacks.io</a></p>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Schedule -->
 <section id="schedule"> 
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading" style="color:green">Schedule</h2>
+                <h2 class="section-heading green">Schedule</h2>
 	            <hr>
             </div>
         </div>
@@ -207,64 +187,51 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 col-med-4">
-                <p style = "color: green;font-size:18px; margin-bottom:10px; margin-top:15px; text-align: center">Day 1: April 14</p>
-                <!-- <div style = "margin-left:13%"> -->
-                    <!-- <p style = "margin-bottom:5px; text-align: center">TBD</p>      -->
-                    <p style = "margin-bottom:5px">5:00PM Check In</p>
-                    <p style = "margin-bottom:5px">6:00PM Opening Ceremony/Team Building</p>
-                    <p style = "margin-bottom:5px">7:00PM Dinner</p>
-<!--                     <p style = "margin-bottom:5px">8:00PM Build Your First Website: Hack Club</p>
-                    <p style = "margin-bottom:5px">9:00PM Intro to Programming: Make School</p>
-                    <p style = "margin-bottom:5px">10:00PM Intermediate iOS Workshop: Make School</p> -->
-                <!-- </div> -->
+                <p class = "schedule-header">Day 1: April 14</p>
+                <p class = "schedule-text">5:00PM Check In</p>
+                <p class = "schedule-text">6:00PM Opening Ceremony/Team Building</p>
+                <p class = "schedule-text">7:00PM Dinner</p>
             </div>
             <div class="col-lg-6 col-med-4 container-fluid">
-                <p style = "color:green; font-size:18px; margin-bottom:10px; margin-top:15px; text-align: center">Day 2: April 15</p>    
-              	<!-- <div style = "margin-left:13%"> -->
-                    <!-- <p style = "margin-bottom:5px;text-align: center">TBD</p>               -->
-    	 			<p style = "margin-bottom:5px">7:00AM Breakfast</p>
-<!--     	 			<p style = "margin-bottom:5px">9:00AM Augmented Reality Lecture: NonChat</p>
-    	 			<p style = "margin-bottom:5px">10:00AM Augmented Reality Scavenger Hunt</p> -->
-                    <p style = "margin-bottom:5px">12:00PM Lunch</p> 
-                    <p style = "margin-bottom:5px">3:00PM Project Submission</p>
-                    <p style = "margin-bottom:5px">4:00PM Present Hacks</p>
-                    <p style = "margin-bottom:5px">5:00PM Awards and Closing Ceremony</p>
-                <!-- </div> -->
+                <p class = "schedule-header">Day 2: April 15</p>    
+	 			<p class = "schedule-text">7:00AM Breakfast</p>
+                <p class = "schedule-text">12:00PM Lunch</p> 
+                <p class = "schedule-text">3:00PM Project Submission</p>
+                <p class = "schedule-text">4:00PM Present Hacks</p>
+                <p class = "schedule-text">5:00PM Awards and Closing Ceremony</p>
 		    </div>
         </div>
     </div>
 </section>
 
+<!-- Sponsors -->
 <section class="schedule sponsors" id="sponsor">
    <div class="container">
-	   <h2 class="" style="text-align:center; color: white">Sponsors</h2>
+	   <h2 class="section-heading white">Sponsors</h2>
        <hr>
        <h5 class="" style="text-align:center; color: white; padding-bottom: 10px">Interested in being a sponsor? Check out our sponsorship package or send us an email at info@palyhacks.io!</h2>
        <div class = "row" style = "padding-bottom: 20px">
             <div class = "col-lg-12" style = "text-align: center !important">
-                <a class="ghost-button-long" href="sponsorpackage.pdf" style="height: 40px !important;">Sponsorship Package</a>
+               <a href="sponsorpackage.pdf" class="btn btn-default btn-lg"><i class="fa fa-eye fa-fw"></i> <span class="network-name">Sponsorship Package</span></a>
             </div>
        </div>
-<!--         <p style="color:green !important;"><center>Interested in being a sponsor? Check out our sponsorship package <a href = "sponsorpackage.pdf">here</a> or send us an email at <a href="mailto:info@palyhacks.io">info@palyhacks.io</a></center></p>  -->
    </div>
 </section>
 
-
-
 </body>
+
+<!-- Footer -->
 <footer style="padding-top:10px; padding-bottom: 10px; background-color: rgba(10, 90, 11, 0.9)">
 <div class="container">
    <div class = "row">
         <div style = "display: flex !important">
         <div class = "col-lg-4" style = "padding-top:5px !important">
-            <a class="ghost-button-short" href="https://palyhacks.github.io/palyhacks-2017/" style="height: 40px !important ">VISIT 1.0</a>
-        </div>
-        <div class = "col-lg-8">
-            <!-- <p style="text-align: left; padding: 12px 0px 0px 17px !important; color:white">Made by the PalyHacks team</p> -->
+               <a href="https://palyhacks.github.io/palyhacks-2017/" class="btn btn-default btn-lg"><i class="fa fa-eye fa-fw"></i> <span class="network-name" style = "font-family: 'Montserrat', sans-serif;">2017</span></a>
         </div>
     </div>
     </div>
 </footer>
+
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
