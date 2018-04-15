@@ -447,6 +447,7 @@ img::-moz-selection{
 
 .schedule-text {
     margin-bottom: 5px;
+    text-align: left
 }
 .schedule-header {
     color: green;
