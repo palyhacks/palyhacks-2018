@@ -439,10 +439,10 @@ img::-moz-selection{
 }
 
 .btn-default:focus,.btn-default:hover {
-    border: 1px solid #000;
+    border: 1px solid green;
     outline: 0;
     color: #fff;
-    background-color: #000000
+    background-color: green;
 }
 
 .schedule-text {
@@ -512,4 +512,34 @@ h2 {
 .emblem {
     width:250px;
     margin:auto;
+}
+
+.codeblock {
+    font-family: Courier;
+    font-size: 16px;
+    background-color: #25994e;
+    padding: 5px;
+    line-height: 34px;
+    border-radius: 5px;
+    transition: all .35s;
+    text-decoration: none;
+    color: white;
+}
+.codeblock:hover {
+    background-color: #1f7c40;
+    text-decoration: none;
+    color: white;
+}
+
+.codeblock-p {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    background: green;
+    min-width: 200px;
+    max-width: 300px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
 }
